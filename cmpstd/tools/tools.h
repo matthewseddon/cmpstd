@@ -1,2 +1,7 @@
 #pragma once
-namespace cmpstd { namespace tools { void PrintHello(); }}
+namespace cmpstd {
+namespace tools {
+void PrintSmiles();
+void PrintHello(); 
+}
+}
