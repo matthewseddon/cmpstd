@@ -3,6 +3,7 @@ project(cmpstd VERSION 0.0.1
                DESCRIPTION "A small utility for compound standardization"
                LANGUAGES CXX)
 
+
 # set build type for debug by default
 if(NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE Debug1 CACHE STRING "" FORCE)
