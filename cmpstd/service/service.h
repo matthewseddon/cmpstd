@@ -9,7 +9,10 @@ namespace cmpstd {
 namespace service {
 class StandardizeMoleculeImpl final 
     : public StandardizeMolecule::Service {
-  ::grpc::Status runStandardize(::grpc::ServerContext* context, const ::Molecule* request, ::Molecule* response) override;
+    public:
+      grpc::Status runStandardize(grpc::ServerContext* context,
+                                  const Molecule* request,
+                                  Molecule* response) override;
 };
 } //namespace service
 } //namespace cmpstd

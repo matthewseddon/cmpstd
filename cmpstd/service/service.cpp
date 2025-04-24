@@ -6,7 +6,10 @@
 namespace cmpstd { 
 namespace service { 
 class StandardizeMoleculeImpl final : public StandardizeMolecule::Service {
-  grpc::Status runStandardize(::grpc::ServerContext* context, const ::Molecule* request, ::Molecule* response) override {
+    public:
+      grpc::Status runStandardize(grpc::ServerContext* context, 
+                                  const Molecule* request,
+                                  Molecule* response) override {
     std::cout << "Called runStandardize \n";
     response->set_id(request->id());
     response->set_smiles("SMILES");    
