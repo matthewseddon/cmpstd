@@ -35,3 +35,5 @@ protobuf_generate(TARGET protolib LANGUAGE grpc
 find_package(RDKit REQUIRED)
 add_executable(service service.cc)
 target_link_libraries(service PUBLIC cxx_setup protolib RDKit::RDGeneral RDKitMolStandardize RDKitSmilesParse)
+
+install(TARGETS service)

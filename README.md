@@ -11,10 +11,9 @@ Finally, an illustrative Python client has been written to illustrate how this c
 A simple example is provided in the `simple` directory. To build and run this in docker build with
 ```bash
 cd simple
-docker build --tag cmpstd-build --target build . # only build the build stage
-docker build --tag cmpstd-service --target service . # build the deployment application
+docker build --tag cmpstd-service . # build the deployment application
 ```
-Note that this builds the service in a multi-stage build. Running the application can then be done using port forwarding.
+Running the application can then be done using port forwarding.
 ```bash
 docker run -it -p 9999:9999 --tag cmpstd-service
 ```
