@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+message Molecule {
+  string id = 1;
+  string smiles = 2;
+}
+
+service StandardizeMolecule {
+  rpc runStandardize(Molecule) returns (Molecule) {}
+}
