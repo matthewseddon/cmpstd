@@ -1,3 +1,4 @@
+#include <cmpstd/service/service.h>
 #include <grpcpp/grpcpp.h>
 #include <iostream>
 #include "proto/cmpstd.grpc.pb.h"

@@ -17,3 +17,4 @@ protobuf_generate(TARGET protolib LANGUAGE grpc
 
 add_library(service service.cpp)
 target_link_libraries(service PUBLIC cxx_setup protolib)
+target_include_directories(service PUBLIC ${CMAKE_CURRENT_BINARY_DIR})
