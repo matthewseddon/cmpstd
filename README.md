@@ -8,6 +8,7 @@ The service can be build in Docker ensuring that it can be deployed on a cloud s
 Finally, an illustrative Python client has been written to illustrate how this can be incorporated into back end data processing workflows.
 
 ## Simple Example Service
+NOTE:: The "simple" build is currently the only working directory. A modular build is in development and forthcoming.
 A simple example is provided in the `simple` directory. To build and run this in docker build with
 ```bash
 cd simple
