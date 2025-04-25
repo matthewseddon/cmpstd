@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 4.0)
+cmake_minimum_required(VERSION 3.28)
 project(cmpstd VERSION 0.0.1
                DESCRIPTION "A small utility for compound standardization"
                LANGUAGES CXX)
