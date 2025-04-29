@@ -23,9 +23,19 @@ RUN  mkdir -p /deps/grpc/cmake/build && \
 
 COPY . /cmpstd
 
+FROM build as simple
+
 RUN cd /cmpstd && cmake -DCMAKE_PREFIX_PATH=/deps \
-                         -S /cmpstd -B /build && \
+                         -S /cmpstd/simple -B /build && \
                          cmake --build /build --target install
 
 EXPOSE 9999
 CMD ["service"]
+
+FROM build as modular
+RUN cd /cmpstd && cmake -DCMAKE_PREFIX_PATH=/deps \
+                         -S /cmpstd/modular -B /build && \
+                         cmake --build /build --target install
+
+EXPOSE 9999
+CMD ["cmpstd_server"]
