@@ -1,7 +1,7 @@
 #pragma once
+#include <string>
 namespace cmpstd {
 namespace tools {
-void PrintSmiles();
-void PrintHello(); 
+std::string StandardizeSmiles(std::string input_smiles);
 }
 }

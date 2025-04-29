@@ -8,7 +8,6 @@ The service can be build in Docker ensuring that it can be deployed on a cloud s
 Finally, an illustrative Python client has been written to illustrate how this can be incorporated into back end data processing workflows.
 
 ## Simple Example Service
-NOTE:: The "simple" build is currently the only working directory. A modular build is in development and forthcoming.
 A simple example is provided in the `simple` directory. To build and run this in docker build with
 ```bash
 cd simple
@@ -20,5 +19,7 @@ docker run -it -p 9999:9999 --tag cmpstd-service
 ```
 Then we can use a program like insomnia or grpcurl to run a simple query against the service. 
 
+## Modular Example Service
+This modular build replicates the functionality of the simple build but splits the functionality into different modules, which is better suited to a more complex tool.
 ## Example Python client
 
