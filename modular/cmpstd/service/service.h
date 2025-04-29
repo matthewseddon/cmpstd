@@ -1,3 +1,6 @@
+#pragma once
+#ifndef MYHEADEFILE_H
+#define MYHEADEFILE_H
 #include <grpc/grpc.h>
 #include <grpcpp/server_builder.h>
 #include <grpcpp/server_context.h>
@@ -21,3 +24,4 @@ class StandardizeMoleculeImpl final
 };
 } //namespace service
 } //namespace cmpstd
+#endif
